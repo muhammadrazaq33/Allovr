@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Logo from "../../../../public/Assets/logo.png";
 import { IoMenu } from "react-icons/io5";
 import Model from "../Model";
 import Image from "next/image";
@@ -8,7 +7,7 @@ import Image from "next/image";
 const Navbar = () => {
   const [showModel, setShowModel] = useState(false);
   return (
-    <nav className="h-[120px] m-auto bg-[black] lg:px-8 px-4 text-[white] flex items-center justify-between">
+    <nav className="h-[120px] bg-[#0e0e0e] lg:px-8 text-[white] flex items-center justify-between">
       <div className="relative w-[10rem] h-[2.5rem]">
         <Image
           src="/Assets/logo.png"
@@ -18,7 +17,7 @@ const Navbar = () => {
         ></Image>
       </div>
       <div className="flex gap-5 items-center text-[white]">
-        <div className="hidden md:flex gap-5 items-center text-[white]">
+        <div className="hidden md:flex gap-8 items-center text-[white]">
           <a href="" className="capitalize text-[18px]">
             about
           </a>

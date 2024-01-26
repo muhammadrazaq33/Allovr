@@ -1,3 +1,6 @@
+// navbar links
+export const links = ["about", "how it works", "staking"];
+
 export default [
   {
     id: 0,

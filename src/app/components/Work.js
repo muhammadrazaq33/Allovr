@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const Work = () => {
   return (
-    <section className="my-[5rem]">
-      <div className="flex justify-center items-center gap-[4rem]">
+    <section className="mt-[5rem]">
+      <div className="flex justify-between items-center gap-[1rem]">
         {/* left side*/}
-        <article className="w-[35rem]">
+        <article className="max-w-[35rem]">
           <h2 className="text-[#FFFFFF] font-bold text-[2.5rem] capitalize">
             how does it work?
           </h2>
