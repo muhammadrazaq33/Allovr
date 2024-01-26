@@ -1,14 +1,16 @@
 import React from "react";
-
+import Image from "next/image";
 const Stake = () => {
   return (
-    <section className="mt-[6rem]">
-      <div className="flex justify-between items-center gap-16">
-        <article>
-          <img src="" />
-          <div className="text-[white] w-[350px] h-[310px] bg-red-100">
-            image
-          </div>
+    <section className="mt-[5rem]">
+      <div className="grid grid-cols-2 justify-center items-center gap-6">
+        <article className="relative w-[24rem] h-[23rem]">
+          <Image
+            src="/Assets/staking-illustration.png"
+            fill
+            className="object-cover"
+            alt=""
+          ></Image>
         </article>
         <article>
           <h3 className="text-[#FFFFFF] text-[35px] font-bold capitalize">

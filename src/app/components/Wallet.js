@@ -1,7 +1,6 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
-import union from "../../../public/Assets/Union.png";
-
+import Image from "next/image";
 const Wallet = () => {
   return (
     <section className="mt-[5rem]">
@@ -59,6 +58,7 @@ const Wallet = () => {
             </button>
           </div>
         </article>
+        {/* right side */}
         <article>
           <div className="flex items-center justify-between">
             <p className=" font-bold capitalize">wallet</p>
@@ -84,7 +84,13 @@ const Wallet = () => {
           <div className="bg-[#ED1E79] px-[17px] py-[13px] rounded mt-[6px]">
             <p className="capitalize">staked</p>
             <div className="flex justify-between mt-[7px]">
-              <img src={union} />
+              <div className="relative w-[1.5rem] h-[1.3rem]">
+                <Image
+                  src="/Assets/Union.png"
+                  fill
+                  className="object-cover"
+                ></Image>
+              </div>
               <div className="flex justify-between gap-4 items-center">
                 <p className="capitalize">pool index</p>
                 <p className="capitalize">slot</p>

@@ -1,10 +1,12 @@
 import React from "react";
 import { GoArrowDownRight } from "react-icons/go";
+import Image from "next/image";
 
 const Work = () => {
   return (
     <section className="my-[5rem]">
-      <div className="flex items-center gap-[5rem]">
+      <div className="flex justify-center items-center gap-[4rem]">
+        {/* left side*/}
         <article className="w-[35rem]">
           <h2 className="text-[#FFFFFF] font-bold text-[2.5rem] capitalize">
             how does it work?
@@ -26,9 +28,13 @@ const Work = () => {
             <span className="text-[#FFFFFF] font-bold">ALLOVR</span> community.
           </p>
         </article>
-        <article>
-          <img src="" />
-          <div className="bg-red-100 w-[300px] h-[300px]">image</div>
+        {/* right side */}
+        <article className="relative w-[24rem] h-[23rem]">
+          <Image
+            src="/Assets/how-illustration.png"
+            fill
+            className="object-cover"
+          ></Image>
         </article>
       </div>
       <div className="w-[38rem] mt-[25px]">

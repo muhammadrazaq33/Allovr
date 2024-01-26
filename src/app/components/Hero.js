@@ -1,10 +1,9 @@
-import hero from "../../../public/Assets/hero-img.png";
 import { GoArrowDownRight } from "react-icons/go";
-import Model from "./Model";
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="max-w-[950px] m-auto">
+    <section className="">
       <div className="flex items-center justify-between mt-5">
         <article className="text-[white] w-[590px] h-[428px] mt-[4rem]">
           <p className="text-[66px] capitalize font-bold">stake</p>
@@ -18,9 +17,13 @@ const Hero = () => {
             scroll down <GoArrowDownRight />
           </button>
         </article>
-        <div className="bg-[red] w-[500px] text-center h-[350px]">
-          <img src={hero} />
-          <p>hello world</p>
+        <div className="relative w-[500px] text-center h-[400px]">
+          <Image
+            src="/Assets/hero-img.png"
+            fill
+            className="object-cover"
+            alt=""
+          ></Image>
         </div>
       </div>
     </section>

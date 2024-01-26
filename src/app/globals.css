@@ -31,3 +31,19 @@ section {
   max-width: 950px;
   margin: auto;
 }
+.stakeBg {
+  background-image: linear-gradient(
+    180deg,
+    #fbb03b 0%,
+    rgba(251, 176, 59, 0) 100%
+  );
+}
+
+nav {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+section {
+  max-width: 90vw;
+  margin: 0 auto;
+}

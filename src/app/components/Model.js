@@ -1,12 +1,21 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
-const Model = ({ showModel }) => {
-  if (!showModel) return null;
+const Model = ({ closeModel }) => {
+  const handleClose = (e) => {
+    if (e.target.id === "close") closeModel();
+  };
   return (
-    <div className="fixed inset-0 p-5 bg-[#272727B8] flex justify-center items-center">
+    <div
+      onClick={handleClose}
+      id="close"
+      className="fixed inset-0 z-10 p-5 bg-[#272727B8] flex justify-center items-center"
+    >
       <div className="text-white bg-black w-[30rem] p-5 flex flex-col rounded-lg">
-        <button className="text-1xl font-bold text-[Red] place-self-end">
+        <button
+          onClick={() => closeModel()}
+          className="text-1xl font-bold text-[Red] place-self-end"
+        >
           X
         </button>
         <p className="text-white font-bold text-[2rem] capitalize mb-[15px]">

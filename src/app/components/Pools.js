@@ -8,7 +8,7 @@ const Pools = ({ data }) => {
           const { id, number, TotalStaked, TotalOwned, AvailableSlots, Link } =
             card;
           return (
-            <article className="mt-[23px]" key={id}>
+            <article className="flex flex-col mt-[23px]" key={id}>
               <p className="text-[#FFF] text-[1.2rem] font-bold">
                 Pool {number}
               </p>
@@ -43,7 +43,7 @@ const Pools = ({ data }) => {
                 </span>{" "}
                 slots
               </div>
-              <a href="" className="text-[blue] mt-[25px] text-[13px]">
+              <a href="" className="text-[blue] break-words text-[13px]">
                 {Link}
               </a>
               <button className="bg-[#ED1E79] py-2 px-4 rounded-[20px] capitalize text-[white] mt-[15px] text-[13px] hover:bg-[black] hover:border border-white">

@@ -4,7 +4,7 @@ import { GoArrowDownRight } from "react-icons/go";
 const StakeAction = () => {
   return (
     <section className="mt-[6rem]">
-      <div className="bg-[#FBB03B] w-[950px] h-[250px] flex justify-center items-center rounded-[17px] shadow-2xl">
+      <div className="bg-[#FBB03B] relative max-w-[950px] m-auto h-[250px] flex justify-center items-center rounded-[17px] shadow-2xl">
         <div>
           <div className="text-[#1A1A1A] text-[50px] font-bold">
             Start your action now!
@@ -19,6 +19,8 @@ const StakeAction = () => {
             </button>
           </div>
         </div>
+        {/* shadow */}
+        <div className="absolute top-[-24px]  rotate-180 left-0 z-20 h-[40px] w-[920px] rounded-t-[10px] stakeBg"></div>
       </div>
     </section>
   );
